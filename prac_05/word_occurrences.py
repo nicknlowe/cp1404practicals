@@ -1,6 +1,8 @@
 """
 CP1404/CP5632 Practical
 Count the number of word occurrences in a string
+Estimate: 20 minutes
+Actual:   17 minutes
 """
 
 word_to_count = {}
