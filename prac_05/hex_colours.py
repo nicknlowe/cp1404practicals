@@ -4,8 +4,8 @@ Hex colours in a dictionary
 """
 
 COLOUR_TO_HEX = {"aliceblue": "#f0f8ff", "aqua": "#00ffff", "burgundy": "#800020", "cream": "#fffdd0",
-                  "denim": "#1560bd", "firebrick": "#b22222", "frostbite": "#e936a7", "goldenrod": "#daa520",
-                  "gray": "#bebebe", "indigo": "#4b0082"}
+                 "denim": "#1560bd", "firebrick": "#b22222", "frostbite": "#e936a7", "goldenrod": "#daa520",
+                 "gray": "#bebebe", "indigo": "#4b0082"}
 
 colour = input("Enter a colour: ").lower()
 while colour != "":
