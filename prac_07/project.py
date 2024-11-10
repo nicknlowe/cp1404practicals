@@ -16,6 +16,14 @@ class Project:
         self.completion_percentage = completion_percentage
 
     def __str__(self):
-        """Returns a string of a Project instance."""
+        """Return a string of a Project instance."""
         return (f"{self.name}, start: {self.start_date}, priority {self.priority}, estimate: ${self.cost_estimate:.2f}"
                 f", completion: {self.completion_percentage}%")
+
+    def __lt__(self, other):
+        """Return if a Project priority is smaller than another instance."""
+        return self.priority < other.priority
+
+    def is_complete(self):
+        """Determine if a Project has been completed."""
+        return self.completion_percentage == 100
