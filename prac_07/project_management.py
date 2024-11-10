@@ -2,7 +2,7 @@
 CP1404/CP5632 Practical
 Project Management Program that features the Project class
 
-Incomplete
+Incomplete - started too late
 """
 
 from prac_07.project import Project
