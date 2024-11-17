@@ -11,11 +11,11 @@ MILES_TO_KILOMETRES = 1.609
 
 class MilesConversionApp(App):
     """
-    Main Program - Kivy app for converting miles to kilometres
+    Main Program - Kivy app for converting miles to kilometres.
     """
     def build(self):
         """
-        Construct the Kivy app
+        Construct the Kivy app.
         :return: reference to root Kivy widgets
         """
         self.title = "Convert Miles to Kilometres"
@@ -24,7 +24,7 @@ class MilesConversionApp(App):
 
     def get_valid_miles(self):
         """
-        Get inputted miles to and convert to float
+        Get inputted miles to and convert to float.
         :return: 0 if conversion produces an error, float version of input
         """
         try:
@@ -35,7 +35,7 @@ class MilesConversionApp(App):
 
     def handle_increment(self, change):
         """
-        Handle up/down button press
+        Handle up/down button press.
         :param change: the amount to change
         :return: None
         """
@@ -45,7 +45,7 @@ class MilesConversionApp(App):
 
     def handle_calculation(self):
         """
-        Handle calculation and output result to output label widget
+        Handle calculation and output result to output label widget.
         :return: None
         """
         value = self.get_valid_miles()
