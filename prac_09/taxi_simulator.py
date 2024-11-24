@@ -19,13 +19,14 @@ def main():
     choice = input(">>> ").lower()
     while choice != "q":
         if choice == "c":
+            print("Taxis available:")
             for i, taxi in enumerate(taxis):
                 print(f'{i} - {taxi}')
             taxi_choice = int(input("Choose taxi: "))
             try:
                 selected_taxi = taxis[taxi_choice]
             except IndexError:
-                print("Invalid taxi")
+                print("Invalid taxi choice")
         elif choice == "d":
             if selected_taxi:
                 selected_taxi.start_fare()
@@ -37,4 +38,14 @@ def main():
             else:
                 print("You need to choose a taxi before you can drive")
         else:
-            print("invalid option")
+            print("Invalid option")
+        print(f"Bill to date: ${total_bill:.2f}")
+        print(MENU)
+        choice = input(">>> ").lower()
+    print(f"Total trip cost: ${total_bill:.2f}")
+    print("Taxis are now:")
+    for i, taxi in enumerate(taxis):
+        print(f'{i} - {taxi}')
+
+
+main()
